@@ -1,39 +1,37 @@
-COVID-19 Urgent Hospitalization Risk Modeling
+# COVID-19 Urgent Hospitalization Risk Modeling
+# Comparative Policy-Oriented Data Analysis
+# Capstone Project — HarvardX CS109x: Introduction to Data Science with Python
 
-Comparative Policy-Oriented Data Analysis
-
-Capstone Project – HarvardX CS109x: Introduction to Data Science with Python
-
-Project Overview
+# Project Overview
 
 This project analyzes patient-level COVID-19 data to identify factors associated with urgent hospitalization outcomes and to evaluate predictive classification models under different healthcare policy constraints.
 
 Rather than optimizing purely for accuracy, this analysis demonstrates how model evaluation and decision thresholds must adapt to real-world public health objectives and resource limitations.
 
-Objectives
+# Objectives
 
-Identify demographic and symptom-related predictors of urgent COVID-19 hospitalization
+Identify demographic and symptom-related predictors of urgent hospitalization
 
-Compare classification models (Logistic Regression vs. K-Nearest Neighbors)
+Compare classification models: Logistic Regression vs. K-Nearest Neighbors
 
-Evaluate model performance using ROC curves and AUC metrics
+Evaluate performance using ROC curves and AUC metrics
 
-Simulate policy-oriented deployment scenarios under different national healthcare priorities
+Simulate policy-oriented deployment scenarios
 
-Demonstrate how model selection depends on context, not accuracy alone
+Show how optimal model selection depends on context — not accuracy alone
 
-Dataset & Methodology
-Data Processing
+# 1. Dataset & Methodology
+# Data Processing
 
 Data cleaning and preprocessing
 
 KNN-based imputation for missing values
 
-Feature selection and encoding
+Feature encoding
 
-Train/test split for out-of-sample validation
+Train/test split
 
-Exploratory Data Analysis (EDA)
+# 2 Exploratory Data Analysis (EDA)
 
 Age distribution analysis
 
@@ -43,9 +41,9 @@ Hospitalization outcome breakdown
 
 Correlation exploration
 
-Modeling Approach
+# Modeling
 
-Logistic Regression (baseline interpretable model)
+Logistic Regression (interpretable baseline model)
 
 K-Nearest Neighbors (non-linear classifier)
 
@@ -53,54 +51,54 @@ ROC curve analysis
 
 AUC comparison
 
-Threshold sensitivity evaluation
+Threshold sensitivity analysis
 
-Policy-Oriented Evaluation Scenarios
+# 3 Policy-Oriented Scenarios
 
-To illustrate real-world decision-making trade-offs, model performance was analyzed under three hypothetical healthcare contexts:
+To illustrate real-world trade-offs, model performance was evaluated under three hypothetical healthcare contexts:
 
-Brazil – Conservative Classification
-Objective: Reduce false positives to avoid unnecessary public alarm and hospital overload.
+🇧🇷 Brazil — Conservative Classification
+Reduce false positives to avoid unnecessary hospital overload.
 
-Germany – High Sensitivity Strategy
-Objective: Minimize false negatives to reduce fatal outcomes, prioritizing early intervention.
+🇩🇪 Germany — High Sensitivity Strategy
+Minimize false negatives to reduce fatal outcomes.
 
-India – Resource-Constrained Triage
-Objective: Optimize patient prioritization under limited hospital capacity.
+🇮🇳 India — Resource-Constrained Triage
+Optimize patient prioritization under limited hospital capacity.
 
-These scenarios highlight that optimal thresholds and model choice vary depending on healthcare objectives, risk tolerance, and resource availability.
+These scenarios highlight that model deployment must align with policy goals and operational constraints.
 
-Key Findings
+# Key Findings
 
 Age and symptom combinations are strong predictors of urgent hospitalization
 
-KNN outperformed Logistic Regression in AUC, suggesting non-linear relationships
+KNN achieved higher AUC, suggesting non-linear relationships
 
-Decision thresholds significantly impact classification trade-offs
+Threshold selection significantly impacts classification trade-offs
 
-Model deployment must align with policy goals and operational constraints
+Model performance must be evaluated within policy context
 
-Tools & Technologies
+# Tools & Technologies
 
 Python (pandas, numpy, scikit-learn)
 
-Matplotlib and Seaborn
+Matplotlib & Seaborn
 
 Jupyter Notebook
 
-ROC and AUC evaluation metrics
+ROC/AUC evaluation metrics
 
-Future Improvements
+# Future Improvements
 
-Incorporate cross-validation for model robustness
+Apply cross-validation for stronger robustness
 
 Explore tree-based models (Random Forest, Gradient Boosting)
 
-Conduct feature importance analysis for improved interpretability
+Perform feature importance analysis
 
-Apply calibration techniques for probability adjustment
+Add probability calibration
 
-Author
+# Author
 
 Michelle Regalado Betancourtt
 Economist | Data Analytics & Predictive Modeling
